@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stan Batchakui – Développeur web et logiciels à Yaoundé</title>
+<meta name="description" content="Sites web et logiciels de gestion sur mesure pour PME, écoles et institutions à Yaoundé.">
+<style>
+:root{
+  --bg:#0A101C; --panel:#101A2B; --line:#1E2C45; --ink:#DCE5F3; --muted:#8B9AB8;
+  --teal:#5EEAD4; --amber:#F5B83D; --red:#FF6B6B;
+  --mono:"JetBrains Mono","Fira Code",ui-monospace,SFMono-Regular,Consolas,"Courier New",monospace;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:var(--teal)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line);padding:16px 0;position:sticky;top:0;background:rgba(10,16,28,.92);backdrop-filter:blur(6px);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{font-family:var(--mono);font-weight:700}
+.logo b{color:var(--teal)}
+nav a{font-family:var(--mono);font-size:14px;color:var(--muted);text-decoration:none;margin-left:20px}
+nav a:hover{color:var(--teal)}
+.hero{padding:64px 0 48px;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 18px}
+.hero p{color:var(--muted);font-size:18px;margin:0 0 26px;max-width:46ch}
+.btn{display:inline-block;font-family:var(--mono);font-size:15px;font-weight:600;background:var(--teal);color:#06231F;text-decoration:none;padding:12px 20px;border-radius:6px}
+.btn:hover{background:#8af5e3}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+.btn.alt:hover{border-color:var(--teal);color:var(--teal)}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-family:var(--mono);font-size:14px}
+.term-bar{display:flex;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);align-items:center}
+.term-bar i{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.term-bar i:nth-child(1){background:var(--red)}.term-bar i:nth-child(2){background:var(--amber)}.term-bar i:nth-child(3){background:var(--teal)}
+.term-bar span{margin-left:8px;color:var(--muted);font-size:12px}
+.term-body{padding:18px;line-height:1.9;overflow-x:auto}
+.p{color:var(--teal)}.o{color:var(--muted);display:block;margin-bottom:6px}.k{color:var(--amber)}
+.cur{display:inline-block;width:8px;height:15px;background:var(--teal);vertical-align:-2px}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--mono);font-size:22px;margin:0 0 28px}
+h2::before{content:"# ";color:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.card h3{font-family:var(--mono);font-size:16px;margin:0 0 8px;color:var(--ink)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.repo{display:flex;flex-direction:column;gap:10px}
+.repo .meta{font-family:var(--mono);font-size:12.5px;color:var(--amber)}
+.note{color:var(--muted);font-size:14px;margin-top:20px;font-family:var(--mono)}
+.pipe{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
+.pipe li{border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:var(--panel);font-size:15px;color:var(--muted)}
+.pipe li b{display:block;font-family:var(--mono);color:var(--teal);font-size:14px;margin-bottom:4px}
+.contact .term{max-width:640px}
+.links{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-family:var(--mono);font-size:14px}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-family:var(--mono);font-size:13px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:40px}.btn.alt{margin:10px 0 0}nav a{margin:0 16px 0 0}}
+@media(prefers-reduced-motion:no-preference){.cur{animation:b 1.1s steps(1) infinite}}
+@keyframes b{50%{opacity:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo"><b>&gt;</b> stan.batchakui</div>
+  <nav aria-label="Navigation principale"><a href="#services">services</a><a href="#projets">projets</a><a href="#methode">méthode</a><a href="#contact">contact</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1>Je développe des logiciels et sites web fiables, sur mesure.</h1>
+    <p>Développeur à Yaoundé. Applications de gestion, sites institutionnels et automatisation pour PME, écoles et administrations. Devis écrit, livraison par étapes.</p>
+    <a class="btn" href="https://wa.me/237677614697?text=Bonjour%20Stan%2C%20j%27ai%20un%20projet%20%C3%A0%20vous%20proposer.">Écrire sur WhatsApp</a>
+    <a class="btn alt" href="#projets">Voir les projets</a>
+  </div>
+  <div class="term" aria-label="Présentation en style terminal">
+    <div class="term-bar"><i></i><i></i><i></i><span>stan@yaounde:~</span></div>
+    <div class="term-body">
+      <span class="p">$</span> whoami
+      <span class="o">arthur_batchakui · développeur web &amp; logiciels</span>
+      <span class="p">$</span> cat stack.txt
+      <span class="o"><span class="k">Java</span> · <span class="k">PHP</span> · <span class="k">JavaScript</span> · <span class="k">SQL</span> · <span class="k">Git</span></span>
+      <span class="p">$</span> status
+      <span class="o">● disponible pour des missions freelance</span>
+      <span class="p">$</span> <span class="cur"></span>
+    </div>
+  </div>
+</div>
+
+<section id="services"><div class="wrap">
+  <h2>services</h2>
+  <div class="grid">
+    <div class="card"><h3>sites_web()</h3><p>Sites vitrines et institutionnels, rapides et lisibles sur téléphone, faciles à mettre à jour.</p></div>
+    <div class="card"><h3>apps_de_gestion()</h3><p>Stock, facturation, scolarité, administration : un outil adapté à votre façon de travailler.</p></div>
+    <div class="card"><h3>automatisation()</h3><p>Produire des documents officiels et traiter des données en quelques clics plutôt qu'à la main.</p></div>
+    <div class="card"><h3>maintenance()</h3><p>Reprise de projets existants, correction de bugs, ajout de fonctionnalités.</p></div>
+  </div>
+</div></section>
+
+<section id="projets"><div class="wrap">
+  <h2>projets</h2>
+  <div class="grid">
+    <div class="card repo"><h3>SIGI2M</h3><p>Système d'information multi-modules pour un établissement d'enseignement supérieur.</p><div class="meta">[technologies à compléter]</div></div>
+    <div class="card repo"><h3>Mecho</h3><p>Application de messagerie multiplateforme avec un modèle freemium.</p><div class="meta">[technologies à compléter]</div></div>
+    <div class="card repo"><h3>Actes de naissance</h3><p>Production automatisée des actes pour plusieurs mairies, avec un portail par commune.</p><div class="meta">[technologies à compléter]</div></div>
+  </div>
+  <p class="note">// projets clients : code privé, démonstration sur demande</p>
+</div></section>
+
+<section id="methode"><div class="wrap">
+  <h2>méthode</h2>
+  <ol class="pipe">
+    <li><b>brief</b>Échange pour comprendre votre besoin</li>
+    <li><b>spec</b>Cahier des charges et devis écrits</li>
+    <li><b>acompte</b>Paiement avant le démarrage</li>
+    <li><b>build</b>Livraisons par étapes, validées par vous</li>
+    <li><b>support</b>Suivi après la livraison</li>
+  </ol>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>contact</h2>
+  <div class="term">
+    <div class="term-bar"><i></i><i></i><i></i><span>nouveau_projet.sh</span></div>
+    <div class="term-body">
+      <span class="p">$</span> ./contact --projet "décrivez votre besoin"
+      <span class="o">Réponse sous 24 h avec une proposition claire et un prix.</span>
+      <a class="btn" href="https://wa.me/237677614697?text=Bonjour%20Stan%2C%20j%27ai%20un%20projet%20%C3%A0%20vous%20proposer.">Écrire sur WhatsApp</a>
+    </div>
+  </div>
+  <div class="links">
+    <a href="mailto:arthurstan2.0@gmail.com">arthurstan2.0@gmail.com</a>
+    <a href="https://www.linkedin.com/in/arthur-stanley-637a37443/">linkedin</a>
+    <a href="https://github.com/arthurstan20-spec">github</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Stan Batchakui · Yaoundé, Cameroun</div></footer>
+</body>
+</html>
